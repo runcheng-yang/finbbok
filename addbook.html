@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加书籍</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>添加书籍</h1>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- Unicode for the hamburger icon -->
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="addbook.html">添加书籍</a></li>
+                <li><a href="manage.html">管理书籍</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="add-book-form" class="form-container">
+            <div class="form-group">
+                <label for="book-id">书籍ID:</label>
+                <input type="text" id="book-id" name="book-id" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="book-name">书名:</label>
+                <input type="text" id="book-name" name="book-name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="book-year">年份:</label>
+                <input type="text" id="book-year" name="book-year" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="book-review">推荐语:</label>
+                <textarea id="book-review" name="book-review" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="book-isbn">ISBN:</label>
+                <input type="text" id="book-isbn" name="book-isbn" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="book-cover">封面链接:</label>
+                <input type="text" id="book-cover" name="book-cover" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="download-link">下载链接:</label>
+                <input type="text" id="download-link" name="download-link">
+            </div>
+            
+            <div class="form-group">
+                <label for="purchase-link">购买链接:</label>
+                <input type="text" id="purchase-link" name="purchase-link">
+            </div>
+            
+            <button type="submit">提交</button>
+        </form>
+    </main>
+    <script src="addbook.js"></script>
+</body>
+</html>

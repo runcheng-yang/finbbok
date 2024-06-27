@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书籍详情页</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="书籍详情页"></h1>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- Unicode for the hamburger icon -->
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="addbook.html">添加书籍</a></li>
+                <li><a href="manage.html">管理书籍</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="book-details">
+            <img id="book-cover" src="" alt="Book Cover">
+            <div class="book-info">
+                <h2 id="book-name"></h2>
+                <p><strong>年份:</strong> <span id="book-year"></span></p>
+                <p class="book-review"><strong>推荐语:</strong> <span id="book-review"></span></p>
+                <p><strong>ISBN:</strong> <span id="book-isbn"></span></p>
+                <a id="download-link" href="#" class="download-button" style="display: none;" onclick="showCopyrightNotice(event)">下载</a>
+                <a id="purchase-link" href="#" class="support-button">支持正版</a>
+                <p class="copyright-notice">本站发布的所有资源均来自于互联网，仅限用于个人学习和研究目的，请在下载后24小时内删除，不得用于任何商业用途，否则后果自负，请支持购买正版图书！如侵犯到您的权益，请及时通知我们，我们会及时处理。</p>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
